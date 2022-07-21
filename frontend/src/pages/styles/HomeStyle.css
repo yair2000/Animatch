@@ -1,0 +1,10 @@
+.home_bg{
+   background-image: url(https://firebasestorage.googleapis.com/v0/b/quizactivity-3fa8b.appspot.com/o/Anime%20Category.jpg?alt=media&token=bfccd833-83b1-4307-b773-b9a19c33657b);
+   background-position: center;
+   background-size: cover;
+   overflow-x: hidden;
+}
+
+.h1, p{
+   position: static;
+}

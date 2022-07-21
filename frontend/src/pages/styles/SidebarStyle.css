@@ -1,0 +1,36 @@
+.rooms{
+    margin-top: 5px;
+}
+
+.members{
+    margin-top: 20px;
+}
+
+.member-status-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.member-status{
+    margin-bottom: 0;
+    position: relative;
+}
+
+.sidebar-online-status{
+    color: green;
+}
+
+.sidebar-offline-status{
+    color: red;
+}
+
+.sidebar-online-status,
+.sidebar-offline-status{
+    font-size: 11px;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 12px;
+}

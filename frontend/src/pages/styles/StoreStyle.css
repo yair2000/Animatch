@@ -1,0 +1,50 @@
+.footer{
+   margin-top: 17.2rem;
+}
+
+#products_heading{
+   margin-top: 1.8rem;
+}
+  
+.card{
+   height: 93%;
+}
+  
+.card-title a{
+   color: #2e2e2e;
+   text-decoration: none;
+}
+  
+.card-title a:hover{
+   color: #2e2e2e;
+   text-decoration: none;
+}
+  
+.card-body{
+   padding-left: 0;
+}
+  
+.card-text{
+   font-size: 1.4rem;
+}
+  
+#view_btn{
+   background-color: red;
+   color: white;
+}
+  
+.card-img-top {
+   width: 200px;
+   height: 150px;
+}
+  
+.ratings{
+   font-size: 1.2rem;
+   color: red;
+}
+  
+#no_of_reviews{
+   font-size: 0.85rem;
+   color: grey;
+   margin-left: 0.5rem;
+}

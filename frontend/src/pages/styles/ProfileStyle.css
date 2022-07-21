@@ -1,0 +1,34 @@
+.footer{
+   margin-bottom: 11rem;
+}
+
+.avatar {
+   margin-bottom: 0;
+   height: 20rem;
+   width: 20rem;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+}
+  
+.avatar img {
+   width: 80%;
+   height: 80%;
+}
+
+#edit_profile {
+   background-color: red;
+   color: white;
+   border-color: red;
+   margin-left: 8rem;
+ }
+ 
+ .user-info h4 {
+   font-weight: 800;
+   color: grey;
+   margin-top: 2rem;
+ }
+ 
+ .user-info p {
+   font-size: 1.1rem;
+ }
