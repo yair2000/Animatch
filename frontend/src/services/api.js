@@ -34,13 +34,13 @@ const appAPI = createApi({
         //         body: user
         //     })
         // }),
-        updateUser: builder.mutation({
-            query: (user) =>({
-                url: "/users/update",
-                method: "PUT",
-                body: user
-            })
-        }),
+        // updateUser: builder.mutation({
+        //     query: (user) =>({
+        //         url: "/update",
+        //         method: "PUT",
+        //         body: user
+        //     })
+        // }),
         // forgotPassword: builder.mutation({
         //     query: (user) =>({
         //         url: "/password/forgot",
@@ -98,7 +98,7 @@ export const {
     useLogUserMutation,
     useLogOutUserMutation,
     // useLoadUserMutation,
-    useUpdateUserMutation,
+    // useUpdateUserMutation,
     // useForgotPasswordMutation,
     // useNewPasswordMutation,
     // useUpdatePasswordMutation,

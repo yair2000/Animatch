@@ -22,7 +22,6 @@ export const userSlice = createSlice({
     extraReducers: (builder) =>{
        builder.addMatcher(api.endpoints.regUser.matchFulfilled, (state, {payload}) => payload);
        builder.addMatcher(api.endpoints.logUser.matchFulfilled, (state, {payload}) => payload);
-       builder.addMatcher(api.endpoints.updateUser.matchFulfilled, () => null);
        builder.addMatcher(api.endpoints.logOutUser.matchFulfilled, () => null);
     }
 });

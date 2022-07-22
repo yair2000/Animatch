@@ -27,6 +27,8 @@ function Login(){
 
   async function handleLogin(e){
     e.preventDefault();
+
+    // Generates a cookie after a successful login
     try{
       const data = await axios.post("/users/login", {
         email,
@@ -37,8 +39,9 @@ function Login(){
     catch(error){
       console.log(error.response);
     }
+
     // Auth using socket.io
-    logUser({email, password}).then(({data}) =>{
+    logUser({ email, password }).then(({ data }) =>{
       if(data){
         socket.emit("new-user");
         navigate("/");
@@ -84,7 +87,9 @@ function Login(){
             <div className="py-4">
               <p className="text-center">
                 Don't have an account? <Link to="/register">Create one</Link>
-                Forgot your password<Link to="/forgotpassword">Click Here</Link>
+              </p>
+              <p className="text-center">
+                Forgot your password? <Link to="/forgotpassword">Click Here</Link>
               </p>
             </div>
           </Form>

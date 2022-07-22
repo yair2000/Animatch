@@ -16,11 +16,10 @@ const UpdateProfile = () =>{
   const navigate = useNavigate();
 
   const user = useSelector((state) => state.user);
-  const { loading } = useSelector((state) => state.user);
-  const { error, isUpdated } = useSelector((state) => state.auth);
+  const { loading, error, isUpdated } = useSelector((state) => state.auth);
 
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [img, setImg] = useState("");
   const [imgPreview, setImgPreview] = useState({profilepic});
 
