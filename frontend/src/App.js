@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { AppContext, socket } from "./context/appContext";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
@@ -11,13 +12,13 @@ import Store from "./pages/store/Store";
 import ProductDetails from "./pages/store/ProductDetails";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { loadUser } from "./reducers/user/userService";
-import store from "./app/store"
 import "./App.css";
 
 function App(){
+  const dispatch = useDispatch();
   useEffect(() => {
-     store.dispatch(loadUser())
-  }, [])
+     dispatch(loadUser())
+  }, [dispatch])
 
   const [rooms, setRooms] = useState([]);
   const [currentRoom, setCurrentRoom] = useState([]);

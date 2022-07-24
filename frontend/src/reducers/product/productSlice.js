@@ -8,7 +8,7 @@ import {
     CLEAR_ERRORS } from "../../constants/productConstants"
 
 export const productSlice = (state = { products: [] }, action) =>{
-    switch (action.type){
+    switch(action.type){
         case ALL_PRODUCTS_REQUEST:
             return{
                loading: true,
@@ -42,7 +42,7 @@ export const productSlice = (state = { products: [] }, action) =>{
 };
 
 export const productDetailsSlice = (state = { product: {} }, action) =>{
-    switch (action.type){
+    switch(action.type){
         case PRODUCT_DETAILS_REQUEST:
             return{
                ...state,

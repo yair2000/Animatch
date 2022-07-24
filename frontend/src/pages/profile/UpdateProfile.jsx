@@ -3,6 +3,7 @@ import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import { Container, Button, Form, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+// import { useUpdateUserMutation } from "../../services/api";
 import { UPDATE_PROFILE_RESET } from "../../constants/userConstants";
 import { updateProfile, loadUser, clearErrors } from "../../reducers/user/userService";
 import MetaData from "../../components/MetaData";
@@ -15,8 +16,10 @@ const UpdateProfile = () =>{
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  // const [updateUser, { error }] = useUpdateUserMutation();
+
   const user = useSelector((state) => state.user);
-  const { loading, error, isUpdated } = useSelector((state) => state.auth);
+  const { error, isUpdated } = useSelector((state) => state.update);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -51,6 +54,8 @@ const UpdateProfile = () =>{
   async function handleUpdate(e){
      e.preventDefault();
      dispatch(updateProfile());
+    //  await updateUser(user);
+    //  window.location.replace("/");
   };
 
   return(
@@ -99,8 +104,7 @@ const UpdateProfile = () =>{
 
             <Button
             type="submit"
-            className="btn btn-danger mt-3"
-            disabled={loading ? true : false}>Update</Button>
+            className="btn btn-danger mt-3">Update</Button>
           </Form>
          </Col>
          <div className="footer"/>
