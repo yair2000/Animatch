@@ -1,0 +1,125 @@
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.order-invoice a{
+  color: #5d6975;
+  text-decoration: underline;
+}
+
+.order-invoice header{
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+#logo{
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.order-invoice h1{
+  border-top: 1px solid #5d6975;
+  border-bottom: 1px solid #5d6975;
+  color: #5d6975;
+  font-size: 2.4rem;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+#project{
+  float: left;
+}
+
+#project span{
+  text-align: right;
+  width: 52px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+#company{
+  float: right;
+  text-align: right;
+}
+
+#project div,
+#company div{
+  white-space: nowrap;
+}
+
+.order-invoice{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.order-invoice th,
+.order-invoice td{
+  text-align: center;
+}
+
+.order-invoice th{
+  padding: 5px 20px;
+  border-bottom: 1px solid #c1ced9;
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+.order-invoice .service,
+.order-invoice .desc{
+  text-align: left;
+}
+
+.order-invoice td{
+  padding: 20px;
+  text-align: right;
+}
+
+.order-invoice td.service,
+.order-invoice td.desc{
+  vertical-align: top;
+}
+
+.order-invoice td.unit,
+.order-invoice td.qty,
+.order-invoice td.total{
+  font-size: 1.2em;
+}
+
+.order-invoice td.grand{
+  border-top: 1px solid #5d6975;
+}
+
+#notices .notice{
+  font-size: 1.2rem;
+}
+
+.order-invoice footer{
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid #c1ced9;
+  padding: 8px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 48em) and (max-width: 64em){
+  .order-invoice h1{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  #notices .notice{
+    font-size: 1rem;
+  }
+
+  .order-invoice footer{
+    width: 100%;
+    height: 50px;
+  }
+}

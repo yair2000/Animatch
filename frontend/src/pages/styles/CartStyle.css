@@ -1,0 +1,42 @@
+#delete_cart_item{
+  color: red;
+  background: white;
+  padding: 0.7rem 0.8rem;
+  font-size: 1.3rem;
+  border: none;
+}
+
+#card_item_price{
+  font-size: 1.65rem;
+}
+
+#checkout_btn,
+.review-btn{
+  margin-top: 2rem;
+  border-radius: 5rem;
+}
+
+#order_summary{
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.order-summary-values{
+  float: right;
+  font-weight: bold;
+}
+
+.stockCounter input{
+  width: 3rem;
+  text-align: center;
+}
+
+.plus, .minus{
+  padding: 0.1rem 0.5rem;
+}
+
+.stockCounter input::-webkit-outer-spin-button,
+.stockCounter input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}

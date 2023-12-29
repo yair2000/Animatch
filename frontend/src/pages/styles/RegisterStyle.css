@@ -1,0 +1,25 @@
+.reg-profile-pic_container{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reg-profile-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.add-picture-icon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: green;
+  cursor: pointer;
+}
+  
+form{
+  padding: 1rem 2rem;
+}

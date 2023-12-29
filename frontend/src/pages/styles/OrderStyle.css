@@ -1,0 +1,94 @@
+.checkout-progress div{
+  box-sizing: border-box;
+}
+
+.checkout-progress{
+  display: block;
+  clear: both;
+  margin: 20px auto;
+  width: auto;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+.step{
+  margin: 0;
+  border: 0;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  padding: 7px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  border-radius: 20px;
+}
+
+.incomplete{
+  background: whitesmoke;
+}
+
+.active-step{
+  background: #DC3545;
+  border-radius: 20px;
+  color: #fff;
+}
+
+// Order Table
+.table.mdb-dataTable{}
+
+.table.mdb-dataTable.table > :not(caption) > * > *{
+  padding: 0.5rem 0.5rem;
+  background-color: transparent;
+  color: inherit;
+}
+
+div.mdb-datatable div.mdb-datatable-filter input{
+  display: inline-block;
+  margin-left: 0 !important;
+  margin-bottom: 1rem !important;
+  background-color: transparent;
+  color: inherit;
+  box-shadow: none;
+}
+
+div.mdb-datatable div.mdb-datatable-filter input::placeholder{
+  color: darkgray;
+}
+
+div.mdb-datatable div.mdb-datatable-length select, div.mdb-datatable div.mdb-datatable-length input{
+  background-color: transparent;
+  color: darkgray;
+  box-shadow: none;
+}
+
+.edit-icon{
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.invoice-icon{
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.invoice-order-icon{
+  margin-top: -1rem;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.redColor{
+  color: red;
+}
+
+.greenColor{
+  color: green;
+}
+
+@media only screen and (max-width: 48em) and (max-width: 64em){
+  .invoice-icon{
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}

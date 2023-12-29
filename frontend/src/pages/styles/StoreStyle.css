@@ -1,0 +1,23 @@
+#products_heading{
+  margin-top: 1.8rem;
+  margin-left: 0.8rem;
+}
+  
+.card-img-top{
+  width: 200px;
+  height: 200px;
+}
+  
+#no_of_reviews{
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.page-item.active .page-link{
+  background-color: #DC3545;
+  border-color: black;
+}
+
+.page-link{
+  color: black;
+}
